@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shree Mobile Care</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111827, #2563eb);
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      color: #111827;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #4b5563;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    section {
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card .icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background: #111827;
+      color: white;
+    }
+
+    .contact {
+      background: #eef2ff;
+    }
+
+    footer {
+      background: #020617;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media(max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 5px;
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">📱 Shree Mobile Care</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div>
+      <h1>Shree Mobile Care</h1>
+
+      <p>
+        আপনার মোবাইলের সকল ধরনের সমস্যা সমাধানের বিশ্বস্ত ঠিকানা।
+      </p>
+
+      <a href="#services" class="btn">Our Services</a>
+
+      <a href="tel:+8801XXXXXXXXX" class="btn">
+        📞 Call Now
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section id="services">
+
+    <h2>আমাদের সার্ভিস</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <div class="icon">🔧</div>
+        <h3>Mobile Repair</h3>
+        <p>সকল ধরনের মোবাইল হার্ডওয়্যার ও সফটওয়্যার সার্ভিস।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔋</div>
+        <h3>Battery Change</h3>
+        <p>অরিজিনাল ও ভালো মানের ব্যাটারি পরিবর্তন।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Display Change</h3>
+        <p>মোবাইলের ডিসপ্লে পরিবর্তন ও রিপেয়ার সার্ভিস।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Software Service</h3>
+        <p>Software সমস্যা, Flash, Reset ও অন্যান্য সার্ভিস।</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section class="about" id="about">
+
+    <h2>আমাদের সম্পর্কে</h2>
+
+    <p>
+      Shree Mobile Care একটি বিশ্বস্ত মোবাইল সার্ভিসিং প্রতিষ্ঠান।
+      দ্রুত, নির্ভরযোগ্য এবং যত্নসহকারে মোবাইল সার্ভিস দেওয়াই আমাদের লক্ষ্য।
+    </p>
+
+  </section>
+
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+
+    <h2>যোগাযোগ করুন</h2>
+
+    <p>📍 ঠিকানা: আপনার দোকানের ঠিকানা এখানে লিখুন</p>
+
+    <p>📞 ফোন: 01XXXXXXXXX</p>
+
+    <p>📧 Email: example@gmail.com</p>
+
+    <br>
+
+    <a href="tel:+8801XXXXXXXXX" class="btn">
+      📞 Call Us
+    </a>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 Shree Mobile Care | All Rights Reserved
+    </p>
+  </footer>
+
+</body>
+</html>
